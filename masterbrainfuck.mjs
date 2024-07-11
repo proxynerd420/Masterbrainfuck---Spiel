@@ -219,12 +219,12 @@ function dasSpielStarten() {
       dasSpielStarten();
       break;
     } else if (schwarzePunkte === 0 && weißePunkte === 0) {
-      const zufälligeNachricht =
-        zufälligeNachrichten[
-          Math.floor(Math.random() * zufälligeNachrichten.length)
-        ];
+      const nachrichtIndex = Math.floor(
+        Math.random() * zufälligeNachrichten.length
+      );
+      const zufälligeNachricht = zufälligeNachrichten[nachrichtIndex];
       // console.log(chalkAnimation.neon(zufälligeNachricht).render()); // animierte Nachricht mit Neon-Effekt wird durch .render in Form eines Strings ausgegeben
-      console.log(chalk.yellow(zufälligeNachricht));
+      chalkAnimation.rainbow(zufälligeNachricht).start();
     } else {
       let schwarzePunkteAnzeige =
         schwarzePunkte > 0
