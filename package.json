@@ -1,0 +1,20 @@
+{
+    "name": "Masterbrainfuck---Spiel",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Nell21/Masterbrainfuck---Spiel.git",
+    "author": "FRickReich <frickreich@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "start": "node masterbrainfuck.mjs",
+      "start:dev": "nodemon masterbrainfuck.mjs"
+    },
+    "dependencies": {
+      "chalk": "^5.3.0",
+      "chalk-animation": "^2.0.3",
+      "prompt-sync": "^4.2.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.4"
+    }
+  }
